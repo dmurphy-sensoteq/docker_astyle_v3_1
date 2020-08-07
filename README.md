@@ -14,20 +14,6 @@
 	where:
 		stylefile.astyle  is the name of your style file (in the example assumed to be in the current directory)
 		src               is the folder where the source files are located (relative to the current directory)
-	
-	If the --option=filename is not provided then a style file within the container is used which has:
-
-		--formatted
-		--recursive
-		--style=allman
-		--indent=tab=8
-		--indent-switches
-		--break-blocks
-		--align-pointer=type
-		--add-braces
-		--attach-closing-while
-		--lineend=windows
-		--suffix=none	
 
 ## Notes
 	The docker build file amends AStyle source file astyle_main.cpp to also #include <limits.h>
