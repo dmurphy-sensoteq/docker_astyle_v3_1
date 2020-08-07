@@ -30,6 +30,8 @@ RUN apk update && \
 # Copy the executable && \
    mkdir /astyle && \
    cp /tmp/astyle/build/gcc/bin/astyle /astyle/astyle && \
+# Create the shared folder && \
+   mkdir /data && \
 # Clean up && \
    rm /tmp/${FILENAME} && \
    rm -rf /tmp/* && \
@@ -37,4 +39,4 @@ RUN apk update && \
    rm -rf /var/lib/apt/lists/*
 
 # Entry point
-ENTRYPOINT ["/astyle/astyle", ""]
+ENTRYPOINT ["/astyle/astyle"]
